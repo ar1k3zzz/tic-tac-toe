@@ -4,6 +4,9 @@
 int main() {
     srand(time(0));
     Environment game;
-    game.playVSStateMachine('X');
+    int option;
+    game.mainMenu();
+    cin >> option;
+    game.mainMenu(option);
     return 0;
 }

@@ -32,11 +32,43 @@ void Environment::showBoard() {
 }
 
 void Environment::mainMenu() {
-
+    cout << setfill('=') << setw(14);
+    cout << "Tic Tac Toe";
+    cout << setfill('=') << setw(4);
+    cout << ' ' << endl;
+    cout << "1) Player vs player" << endl
+         << "2) PLayer vs RandomActorBot" << endl
+         << "3) Player vs StateMachineBot" << endl;
+    cout << endl << "Choose option: ";
 }
 
 void Environment::mainMenu(char input) {
-
+    switch (input) {
+        case 1:{
+            cout << "Which side would you like to play? X/O" << endl;
+            char side;
+            cin >> side;
+            playGame(side);
+            break;
+        }
+        case 2:{
+            cout << "Which side would you like to play? X/O" << endl;
+            char side;
+            cin >> side;
+            playVSRandomActorBot(side);
+            break;
+        }
+        case 3:{
+            cout << "Which side would you like to play? X/O" << endl;
+            char side;
+            cin >> side;
+            playVSStateMachine(side);
+            break;
+        }
+        default:{
+            cout << "PLease choose the right option" << endl;
+        }
+    }
 }
 
 bool Environment::getInputPlayerX(string player) {
