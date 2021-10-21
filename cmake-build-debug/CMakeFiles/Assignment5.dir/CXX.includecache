@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/Arikezz/CLionProjects/Assignment5/Header Files/Environment.h
+Player.h
+/cygdrive/c/Users/Arikezz/CLionProjects/Assignment5/Header Files/Player.h
+iomanip
+-
+iostream
+-
+fstream
+-
+cstring
+-
+
+/cygdrive/c/Users/Arikezz/CLionProjects/Assignment5/Header Files/Player.h
+
+/cygdrive/c/Users/Arikezz/CLionProjects/Assignment5/Source Files/Environment.cpp
+../Header Files/Environment.h
+/cygdrive/c/Users/Arikezz/CLionProjects/Assignment5/Header Files/Environment.h
+
